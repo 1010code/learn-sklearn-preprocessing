@@ -103,3 +103,6 @@ StandardScaler 縮放過後資料集 X 的標準差 :  [1.16263167 1.00446771 1.
 
 ## 結語
 機器學習模型保存常見的套件有 pickle、joblib 這兩種。pickle 是可移植的，且可以在 Linux 下建立一個 pickle，然後將它傳送到在 Windows 或 Mac OS 下執行的 Python 程式執行。如果內容是複雜物件時，可能會遇到一些問題。joblib 相對的透過二進位編碼，優點是效率很高，讀取速度也相對 pickle 快。如果資料及過於龐大狀態下建議可以採用 joblib 套件進行資料的模型存取。
+
+## Reference
+[stackoverflow](https://stackoverflow.com/questions/41993565/save-minmaxscaler-model-in-sklearn)
