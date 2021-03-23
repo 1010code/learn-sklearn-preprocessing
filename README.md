@@ -1,5 +1,5 @@
 # learn-sklearn-preprocessing
-
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/1010code/learn-sklearn-preprocessing/blob/main/data-processing.ipynb)
 
 ## 前言
 在機器學習模型訓練之前往往會先進行資料處理。常見的處理方式是採用 `sklearn.preprocessing` 的 API，裡面提供許多種資料前處理技巧。例如 StandardScaler、MinMaxScaler...等，更多詳細內容可以參考[這篇](https://ithelp.ithome.com.tw/articles/10240494)。然而在模型上線時，實際現場取得的資料要如何處理呢？想想看，我們為了讓模型有更好泛化能力，必須採用訓練集的資料的基準為新的一筆資料進行縮放前處理。因此我們可以先將 fit 好的 Scaler 模型儲存起來，如果每一筆新資料進來時就不用重新載入訓練集 `fit()` 一次 Scaler，而是直接載入  Scaler 後直接 `transform()`。
